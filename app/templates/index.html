@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>OCR Image to Text</title>
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">OCR Image to Text</h1>
+            <p class="lead">Upload an image to extract text and search for specific text in the collective texts.</p>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="image" name="image" accept="image/*" required>
+                    <label class="custom-file-label" for="image">Choose an image</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Upload and Convert</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
