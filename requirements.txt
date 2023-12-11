@@ -1,0 +1,4 @@
+flask~=3.0.0
+pytesseract~=0.3.10
+werkzeug~=3.0.1
+Pillow==10.1.0
